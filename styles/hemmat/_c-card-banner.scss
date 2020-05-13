@@ -1,0 +1,134 @@
+/*==============================================================================
+Index
+----------------------------------------
+01 - c-cardbanner component styles
+02 - Background colors for Card banner (modifier)
+03 - Apply link for Card banner (modifier)
+04 - Element with in Card banner
+05 - Screen Viewpoint fix
+==============================================================================*/
+/* ----------------------------------------
+01 - Card banner
+---------------------------------------- */
+.c-cardbanner {
+      align-items: center;
+      margin-bottom: 0px;
+
+      > .o-comp__content {
+            margin-top: 0;
+            margin-top: 0; margin-bottom: 0; 
+      }
+      .o-comp__cardbanner {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse; 
+            align-items: center;
+            padding-top: 5rem; 
+            padding-bottom: 5rem; 
+      }
+}
+/* ----------------------------------------
+02 - Background Colors for Card Features
+---------------------------------------- */
+.c-cardbanner {
+
+      &.-lightgray-background {
+            background-color: rgba(221, 221, 221, 0.3);
+      }
+      &.-darkgray-background {
+            background-color: rgba(39, 50, 57, 1);
+
+            .o-comp {
+                  &__title h2 {
+                  color: #FFFFFF !important; 
+                  }
+                  &__title_desc {
+                        color: rgba(255,255,255,.7) !important; 
+                  }
+
+                  .c-card-features__item {
+                        .c-card-features__feature {
+                              color: rgba(255,255,255,.7) !important; 
+                        }
+                  }
+            }
+      }
+}
+
+/* ----------------------------------------
+03 - modifiers 
+---------------------------------------- */
+.c-cardbanner {
+
+      .c-standalone-link {
+            display: none; 
+      }
+      &.-link {
+            .c-standalone-link {
+                  display: block; 
+            }
+      }
+      &.-reverse {
+            .o-comp__cardbanner{
+                  flex-direction: column-reverse;
+            }
+      }
+}
+
+/* ----------------------------------------
+04 - Element with in Card Fetures 
+---------------------------------------- */
+.c-cardbanner {
+      .o-comp__title h2 {
+            margin-bottom: 0px !important;
+            text-align: inherit;
+      }
+      .o-comp__title_desc {
+            text-align: inherit !important;
+            margin-top: 0.5em !important;
+            margin-bottom: 2em !important;
+      }
+      .c-cardbanner__card {
+            padding:3% 0;
+            margin-bottom: 2.5em; 
+      }
+      .c-cardbanner__features {
+            flex: 1;
+            padding: 3%;
+            align-items: center;
+      }
+}
+.c-cardbanner + .c-promotion-carousel .o-comp__content{
+      margin-top:0px;
+}
+
+/* ----------------------------------------
+05 - Screen Viewpoint fix 
+---------------------------------------- */
+@media screen and (min-width: 768px) {
+      /* Medium devices (landscape tablets, 768px and up) */
+      .c-cardbanner {
+            
+            .o-comp__cardbanner { 
+                  flex-direction: row; 
+            }
+            .o-comp__title {
+                  align-items: baseline;
+                  display: block;
+            }
+            .c-cardbanner__card { 
+                  margin-bottom: 0; 
+                  flex: 1; 
+                  text-align: center;
+            }
+            .c-cardbanner__features {
+                  align-items: baseline;
+            }
+            .c-cardbanner__card img {
+                  width: 75%;
+            }
+            &.-reverse .o-comp__cardbanner{ 
+                  flex-direction: row-reverse; 
+            }
+      }
+}

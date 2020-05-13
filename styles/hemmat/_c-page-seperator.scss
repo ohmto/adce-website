@@ -1,0 +1,48 @@
+/*
+    Emerge to toolkit-custom.css 
+    By:Hemmat
+    Date:27Nov2019
+*/
+
+/* Global Component Background grade classes */
+.o-nogray-background{
+  background-color:rgb(255, 255, 255);
+}
+.o-lightgray-background{
+  background-color:rgba(221, 221, 221, 0.3);
+}
+.o-darkgray-background{
+  background-color:rgba(39, 50, 57, 1);
+}
+.o-darkgray-background .o-comp__title h2 {
+  color: #FFFFFF !important; /* title color fix for Dark Background */
+}
+.o-darkgray-background .o-comp__title_desc {
+  color: rgba(255,255,255,.7) !important; /* body text color fix for Dark Background */
+}
+
+/* ##Page Seperator## new component classes */
+.c-page-seperator{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.c-page-seperator .c-page-seperator__link{
+  display: none;
+  padding-top: 0px;
+}
+.c-page-seperator.-link .c-page-seperator__link{
+  display: block;
+}
+.c-page-seperator .c-page-seperator__link,
+.c-page-seperator.-link .c-page-seperator__link {
+  text-align: center !important;
+  padding-top:25px;
+}
+.c-page-seperator .o-comp__title_desc,
+.c-page-seperator.-link .o-comp__title_desc{
+  text-align:center !important;
+  margin-top: 1em !important;
+}
+.c-page-seperator + .c-leads .c-leads__container {
+  margin: 0;
+}

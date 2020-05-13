@@ -1,0 +1,67 @@
+/* ==============================================================================
+Index
+----------------------------------------
+01 - c-our-testimonials
+02 -
+03 -
+04 -
+05 -
+06 -
+07 -
+08 -
+============================================================================== */
+
+/* 01 - c-our-testimonials */
+.c-our-testimonials{
+	background-color: $brand-font;
+	color: $white;
+	margin-bottom: 96px ;
+  
+	.o-comp-testimonials-image{
+	  text-align: center;
+  
+	  img{
+		width: 100%;
+		margin: 0px auto;
+		min-height: 200px;
+		object-fit: cover;
+	  }
+	}
+  
+	.o-comp__content{
+	  margin-top: 0px !important;
+	  margin-bottom: 48px !important;
+	max-width: calc(1040px + 96px * 2) !important;
+  
+	  .o-comp-logo{
+		transform: translateY(-4.5em);
+		width: 50px;
+		margin: auto;
+	  }
+  
+	}
+	>.container{
+	  max-width: 1170px;
+	  margin-top: 0px !important;
+	  padding-top: 3em;
+	  transform: translateY(-3em);
+	  background-color: $brand-font;
+  
+	  .c-blockqoute__section:before{
+		color: $brand-primary-light;
+	  }
+	  .c-blockqoute__section:after{
+		color: $brand-primary-light;
+	  }
+	  .c-blockqoute__para{
+		text-align: center;
+		color: $white;
+		height: 112px;
+		overflow: hidden !important;
+	  }
+	  .c-blockqoute__cite {
+		color: $brand-primary-dark;
+		text-align: center;
+	  }
+	}
+  }

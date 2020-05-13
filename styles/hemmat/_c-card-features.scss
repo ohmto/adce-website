@@ -1,0 +1,250 @@
+/*==============================================================================
+Index
+----------------------------------------
+01 - c-card-features component styles
+02 - Background colors for Card Features (modifier)
+03 - Apply link for Card Features (modifier)
+04 - Element with in Card Fetures
+05 - Screen Viewpoint fix
+==============================================================================*/
+/* --------------------
+01 - Card Features
+-------------------- */
+.c-card-features {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  align-items: center;
+
+  .o-comp__content {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .o-comp__featuresandcard {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    align-content: space-around;
+  }
+  .disclaimer {
+    font-size: 0.9em;
+    color: rgba(39,50,57,.5);
+    letter-spacing: .1px;
+    font-weight: 400;
+    line-height: 1.47;
+    border-top: 1px solid #eee;
+    padding:12px;
+  }
+}
+
+/* 02 - Background Colors for Card Features */
+.c-card-features{
+
+  &.-lightgray-background {
+    background-color: rgba(221, 221, 221, 0.3);
+  }
+  &.-darkgray-background {
+    background-color: rgba(39, 50, 57, 1);
+
+    .o-comp__title h2 {
+      color: #FFFFFF !important; /* title color fix for Dark Background */
+    }
+    .o-comp__title_desc ,
+    .c-card-features__item .c-card-features__feature,
+    .disclaimer {
+      color: rgba(255,255,255,.7) !important; /* feature item text color fix for Dark Background */
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }  
+  }
+}   
+
+/* 03 - Background Colors for Card Features */
+.c-card-features {
+
+  &.-applybutton {
+    display: none; /* if no apply button  */
+  }
+  &.-link .-applybutton{
+    display: block; /* if apply icon add .-link to .c-card-features */
+    margin-top: 2%;
+  }
+}
+/* 04 - Element with in Card Fetures */
+.c-card-features {
+
+  .o-comp__title h2 {
+    margin-bottom: 0px !important;
+    margin: 0 10vw;
+    text-align: center;
+    font-size: calc(32px + 8 * ((100vw - 320px) / 1120));
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  .o-comp__title .o-comp__title_desc {
+    text-align: center !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 2em !important;
+  }
+  .c-card-features__card {
+    padding: 2%;
+    margin-bottom: 24px;
+    // background-image: url(assets/circle-background-shadow.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+  }
+  .c-card-features__features {
+    display: flex; 
+    flex: 1; 
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    align-content: space-around;
+
+    .c-card-features__item {
+      display: flex;
+      align-items: center;
+      padding: 0 2% 2em 2%;  
+      width: 100%; 
+
+      .c-card-features__feature {
+        display: block;
+        flex: 3;
+        padding: 0 1em 1em 1em;
+        font-size: 19px;
+        letter-spacing: 0;
+        font-weight: 400;
+        max-width: 700px;
+        color: rgba(39,50,57,.7)
+      }
+
+      &.-icon {
+
+        .c-card-features__icon img {
+          width: 60px
+        }
+      }
+    }
+  }
+  .c-card-features__features .c-card-features__item .c-card-features__icon,
+  &.-featuretabs .-notabs,
+  .o-tabs-content__wrapper {
+    display: none
+  }
+  .c-card-features__features .c-card-features__item.-icon .c-card-features__icon,
+  .-notabs,
+  &.-featuretabs .o-tabs-content__wrapper  {
+    display: block
+  }
+
+  .c-card-features__apply-button-holder { 
+    text-align: center;
+
+    a {
+      max-width: 180px
+    }
+  }
+  .o-comp__featuresandcard { 
+    flex-direction: column; 
+  }
+  .c-card-features__card { 
+    flex: 1; 
+
+    img { 
+      max-width: 100%; 
+    }
+  } 
+  
+}
+
+
+/* 05 - Screen Viewpoint fix */
+@media screen and (min-width: 768px) {
+  /* Medium devices (landscape tablets, 768px and up) */
+  .c-card-features {
+
+    .o-comp__featuresandcard { 
+      flex-direction: row;
+    }
+    .c-card-features__card { 
+      flex: 1; 
+      margin-bottom: 0;
+    }  
+    .c-card-features__card img { 
+      max-width: 75%; 
+    }
+    .c-card-features__features { 
+      flex: 1; 
+
+      .c-card-features__item { 
+        padding: 0 2% 2em 2%; 
+        width: 100%; 
+      }
+    }
+  }
+
+} 
+@media screen and (min-width: 992px) {
+  /* Large devices (laptops/desktops, 992px and up) */
+  .c-card-features {
+
+    .o-comp__featuresandcard { 
+      flex-direction: row; 
+      margin-top: 12px; 
+      margin-bottom: 12px;
+    }
+    .c-card-features__card { 
+      flex: 1; 
+
+      img { 
+        max-width: 75%; 
+      }
+    }
+    .c-card-features__features { 
+      flex: 2; 
+
+      .c-card-features__item { 
+        padding: 0 2% 2em 2%; 
+        width: 50%; 
+      }
+    }
+    .o-tabs__tab-content { 
+      padding-top: 24px; 
+      padding-bottom: 24px; 
+      &-item {
+        border-top: none;
+      }
+    }
+  }
+} 
+@media screen and (min-width: 1200px) {
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  .c-card-features {
+
+    .o-comp__featuresandcard { 
+      flex-direction: row; 
+      margin-top: 12px; 
+      margin-bottom: 12px;
+    }
+    .c-card-features__card { 
+      flex: 1; 
+
+      img { 
+        max-width: 100%; 
+      }
+    }
+    .c-card-features__features { 
+      flex: 2; 
+
+      .c-card-features__item { 
+        padding-bottom: 0; 
+        width: 50%; 
+      }
+    }
+  }
+}
+
+.c-cardbanner + .c-leads .c-leads__container {
+  margin-top: 0px;
+}

@@ -1,0 +1,114 @@
+/*
+  Emerge to toolkit-custom.css
+  By:Hemmat
+  Date:11Jan2020
+*/
+/*==============================================================================
+  Index
+  ----------------------------------------
+  01 -  ubank features list component styles
+  02 - Background colors for ubank features list (modifier)
+  03 - Options of ubank features list component (modifier)
+  ==============================================================================*/
+/* --------------------
+  01 -  ubank features list component styles
+  -------------------- */
+.c-ubank-features-list {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  align-items: center;
+}
+.c-ubank-features-list .o-comp__content {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 1040px !important;
+}
+.c-ubank-features-list .o-comp__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.c-ubank-features-list .o-comp__title h2 {
+  margin-bottom: 0px !important;
+  margin: 0 10vw;
+  text-align: center;
+  font-size: calc(32px + 8 * ((100vw - 320px) / 1120));
+  font-weight: 600;
+  letter-spacing: -0.2px; /*rtl: 0*/
+}
+.c-ubank-features-list .o-comp__title .o-comp__title_desc {
+  text-align: center !important;
+  margin-top: 0.5em !important;
+}
+.c-ubank-features-list .o-comp__content_feature{
+  margin-bottom: 5rem;
+}
+.c-ubank-features-list .o-comp__content_feature:nth-child(odd){
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.c-ubank-features-list .o-comp__content_feature:nth-child(even){
+  display: flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.c-ubank-features-list .o-comp__content_feature .o-image{
+  flex: 1;
+  padding-top: 0px;
+  padding-bottom: 2.5rem;
+}
+.c-ubank-features-list .o-comp__content_feature .o-image img{
+  width: auto;
+  min-width: 300px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.c-ubank-features-list .o-comp__content_feature .o-feature{
+  flex: 2;
+  padding-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.c-ubank-features-list .o-comp__content_feature .o-feature h3{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.c-ubank-features-list .c-standalone-link {
+  margin-top: 2.5rem;
+}
+
+/* --------------------
+02 - Background Colors for ubank features list component 
+-------------------- */
+.c-ubank-features-list.-lightgray-background {
+  background-color: rgba(221, 221, 221, 0.3);
+}
+.c-ubank-features-list.-darkgray-background {
+  background-color: rgba(39, 50, 57, 1);
+}
+.-darkgray-background .o-comp__title h2,
+.-darkgray-background .o-comp__content_feature .o-feature h3{
+  color: #FFFFFF !important;/* title color fix for Dark Background */
+}
+.-darkgray-background .o-comp__title_desc,
+.-darkgray-background .o-comp__content_feature .o-feature{
+  color: rgba(255, 255, 255, .5) !important;/* body text color fix for Dark Background */
+}
+/* --------------------
+03 - options of ubank features list component (modifier)
+-------------------- */
+.c-ubank-features-list .o-comp__title h2, 
+.c-ubank-features-list .o-comp__title_desc, 
+.c-ubank-features-list .c-standalone-link {
+  display: none;
+}
+.-title .o-comp__title h2, 
+.-describtion .o-comp__title_desc, 
+.-links .c-standalone-link {
+  display: block;
+}
