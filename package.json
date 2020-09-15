@@ -1,0 +1,35 @@
+{
+  "name": "adce-website",
+  "version": "1.0.0",
+  "description": "![ADCP Logo](https://www.propertyfinder.ae/images/pf_broker/logo/d9f8810d13bb05e8b6b7870d76095b09a1ba5cba/desktop \"ADCP Logo\")",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap-sass": "^3.4.1",
+    "d3": "^6.1.1",
+    "flickity": "^2.2.1",
+    "jquery": "^3.5.1",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rtlcss": "^1.4.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohmto/adce-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohmto/adce-website/issues"
+  },
+  "homepage": "https://github.com/ohmto/adce-website#readme"
+}

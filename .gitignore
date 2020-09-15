@@ -1,0 +1,10 @@
+node_modules
+images
+components
+fonts
+svg-icons
+scripts
+webpack.config.js
+.DS_Store
+*/.DS_Store
+.DS_Store
