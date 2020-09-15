@@ -859,7 +859,7 @@ hr {
 
 .o-comp__title {
     h2 {
-        .o-btn-rounded {
+        &>a.o-btn-rounded {
             display: inline-block !important;
         }
     }
