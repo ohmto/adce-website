@@ -860,7 +860,7 @@ hr {
 .o-comp__title {
     h2 {
         .o-btn-rounded {
-            display: inline;
+            display: inline-block !important;
         }
     }
 }
