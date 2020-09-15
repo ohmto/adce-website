@@ -566,52 +566,48 @@ emirati.aspx CSS
     margin-bottom: 10px;
 }
 
-.c-offer-item__wrap {
-    justify-content: flex-start;
-    flex-direction: row;
-    line-height: 1.67;
-    letter-spacing: 0.1px #{"/*rtl:0*/"};
-}
-
-.c-offer-item__section {
-    margin-right: 52px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 260px;
-    display: flex;
-    font-weight: 400;
-    flex-direction: column;
-    margin-bottom: 8px;
-    min-width: 135px;
-    &:last-of-type {
-        margin-bottom: 0;
-        flex-direction: column;
-    }
-}
-
-.c-offer-item__subtitle {
-    font-weight: 600;
-    color: #797d82;
-    padding-bottom: 3px;
-}
-
-.c-offer-cards__list {
-    width: 100%;
-    .c-offer-cards__item {
-        margin-bottom: 1.5rem;
-        padding-bottom: 2rem;
-        .c-offer-card-list__item {
-            background: #ffffff;
-            min-height: 440px;
-            border: 1px solid #ddd;
-            padding-bottom: 24px;
-            .c-offer-card__details {
-                transform: unset;
-            }
-        }
-    }
-}
-
+// .c-offer-item__wrap {
+//     justify-content: flex-start;
+//     flex-direction: row;
+//     line-height: 1.67;
+//     letter-spacing: 0.1px #{"/*rtl:0*/"};
+// }
+// .c-offer-item__section {
+//     margin-right: 52px;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//     width: 260px;
+//     display: flex;
+//     font-weight: 400;
+//     flex-direction: column;
+//     margin-bottom: 8px;
+//     min-width: 135px;
+//     &:last-of-type {
+//         margin-bottom: 0;
+//         flex-direction: column;
+//     }
+// }
+// .c-offer-item__subtitle {
+//     font-weight: 600;
+//     color: #797d82;
+//     padding-bottom: 3px;
+// }
+// .c-offer-cards__list {
+//     width: 100%;
+//     .c-offer-cards__item {
+//         margin-bottom: 1.5rem;
+//         padding-bottom: 2rem;
+//         .c-offer-card-list__item {
+//             background: #ffffff;
+//             min-height: 440px;
+//             border: 1px solid #ddd;
+//             padding-bottom: 24px;
+//             .c-offer-card__details {
+//                 transform: unset;
+//             }
+//         }
+//     }
+// }
 @media (min-width: 992px) {
     #list,
     #_offerList,
