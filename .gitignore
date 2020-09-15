@@ -1,6 +1,7 @@
 node_modules
-images
-fonts
+# images
+# components
+# fonts
 svg-icons
 scripts
 webpack.config.js
