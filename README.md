@@ -1,4 +1,4 @@
-![ADCE Logo](https://adce.ae/en/Images/logo_tcm34-98878.jpg "ADCE Logo")
+<!-- ![ADCE Logo](https://adce.ae/en/Images/logo_tcm34-98878.jpg "ADCE Logo")
 
 # ADCE Styles ~~and Scripts~~ repo
 <p>This is the styles automation generator for Abu Dhabi Commercial Properties Revamped Website.<br/>
@@ -53,4 +53,4 @@ After running the gulp tasks you will be generated the following css files to ta
    styles/toolkit-ar.css
   </code>
 </pre>
-
+ -->
