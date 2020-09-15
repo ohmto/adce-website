@@ -1,6 +1,6 @@
-![ADCP Logo](https://www.propertyfinder.ae/images/pf_broker/logo/d9f8810d13bb05e8b6b7870d76095b09a1ba5cba/desktop "ADCP Logo")
+![ADCE Logo](https://adce.ae/en/Images/logo_tcm34-98878.jpg "ADCE Logo")
 
-# ADCP Styles ~~and Scripts~~ repo
+# ADCE Styles ~~and Scripts~~ repo
 <p>This is the styles automation generator for Abu Dhabi Commercial Properties Revamped Website.<br/>
 These files need to be downloaded on you local machine.</p>
 
@@ -9,7 +9,7 @@ These files need to be downloaded on you local machine.</p>
 <ul>
  <li>Node.js (i was using node v8.9.0), you can <a href="https://nodejs.org/en/download/">download Nodejs</a></li>
  <li>Terminal (you will use terminal to handle js packages by <a href="https://npmjs.com/">npm</a>)
-  <p> you will need to intiate npm package in website folder, lets say you will create a folder called "ADCP-website", and you will paste the repo content in it so we can start the below steps.</p>
+  <p> you will need to intiate npm package in website folder, lets say you will create a folder called "ADCE-website", and you will paste the repo content in it so we can start the below steps.</p>
 <pre>
  <code>
   npm install
