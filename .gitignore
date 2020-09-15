@@ -3,7 +3,7 @@ node_modules
 # components
 # fonts
 svg-icons
-scripts
+# scripts
 webpack.config.js
 .DS_Store
 */.DS_Store
