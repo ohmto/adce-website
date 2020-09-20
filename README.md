@@ -34,6 +34,7 @@ These files need to be downloaded on you local machine.</p>
 
 ### Generating CSS files
 <p>For developing and testing, you can use the Watch task in gulp as following</p>
+<p><em>It will not minimize the CSS, just to be able to debug the exported css files.</em></p>
 <pre>
   <code>
    gulp watch
@@ -49,8 +50,8 @@ These files need to be downloaded on you local machine.</p>
 After running the gulp tasks you will be generated the following css files to take them to tradion CMS
  <pre>
   <code>
-   styles/toolkit-en.css
-   styles/toolkit-ar.css
+   assets/styles/toolkit-en.css
+   assets/styles/toolkit-ar.css
   </code>
 </pre>
 
