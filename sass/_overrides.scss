@@ -865,4 +865,27 @@ hr {
 //     }
 // }
 
+/* Sidemenu Title */
+
+.c-main-nav .nav-lvl {
+    margin-bottom: 24px;
+}
+
+
+/* Sidemenu back button */
+
+.o-switch-button__backtext {
+    flex: 1;
+}
+
+
+/* projects listing page filter */
+
+@media (max-width:768px) {
+    .c-offer-cards__list:first-child {
+        margin-bottom: 24px;
+    }
+}
+
+
 /* Ends here 0 */
